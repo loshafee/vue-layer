@@ -47,4 +47,7 @@ layer.closeAll() 关闭所有弹层
 ## Reference
 参考 开源弹层layerui系列 [layer](http://layer.layui.com/mobile/api.html)
 
+## License
+MIT
+
 
