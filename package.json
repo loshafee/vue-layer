@@ -1,0 +1,25 @@
+{
+  "name": "vue-m-layer",
+  "version": "0.0.1",
+  "description": "vue2 mobile layer",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loshafee/vue-layer.git"
+  },
+  "keywords": [
+    "vue2",
+    "vue2-plugin",
+    "mobile-layer",
+    "layer"
+  ],
+  "author": "loshafee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/loshafee/vue-layer/issues"
+  },
+  "homepage": "https://github.com/loshafee/vue-layer#readme"
+}
