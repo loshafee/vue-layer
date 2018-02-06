@@ -1,5 +1,5 @@
 # vue-m-layer
-Vue2 layer弹层插件
+Vue2 layer plugin
 
 ## Installtion
 
@@ -18,34 +18,34 @@ Vue2 layer弹层插件
     })
 
 ## API
-layer.v 版本号
+layer.v version
 
-layer.open(options) 展示弹层
-* `options` (`Object`), optional
+layer.open(options) display the layer
+* `options` (`Object`)
         
-    * `type` (`Number`) 弹层类型，0 表示信息层，1表示加载层，默认为信息层
-    * `content` (`String`) 弹层文本内容
-    * `title` (`String/Array`) 弹层标题，可以设置为字符串或长度为2的数组，例如设置成['标题', 'background-color: #eee;'] 第二个参数可以自定义标题的样式，默认为空
-    * `time` (`Number`) 控制自动关闭弹层所需描述，默认为不关闭
-    * `style` (`String`) 自定义弹层的样式
-    * `className` (`String`) 添加一个自定义css类到弹层
-    * `btn` (`String/Array`) 不设置则不显示按钮。如果只需要一个按钮，则btn: '按钮'，如果有两个，则：btn: ['按钮一', '按钮二'] 
-    * `shade` (`Boolean`) 设置弹层的背景蒙层，默认显示true
-    * `shadeClose` (`Boolean`) 点击弹层内容区域之外，关闭该弹层，默认点击关闭
-    * `loadingTips` (`String`) 加载层下的提示文字，默认空
-    * `yes` (`Function`) 第一个按钮btn的点击的事件处理函数
-    * `no` (`Function`) 第二个按钮点击btn的事件处理函数
-    * `success` (`Function`) 弹层显示的回调函数
+    * `type` (`Number`) layer type，0 represents message，1 represents loading(defaults to `0`)
+    * `content` (`String`) layer text content
+    * `title` (`String/Array`) layer title，it can be a `string` or `array` which length is two. as follows: ['title', 'background-color: #eee;'] the second parameter sets the title style(defaults to null).
+    * `time` (`Number`) the seconds about closing the layer (defaults no closing)
+    * `style` (`String`) custom layer style
+    * `className` (`String`) add a className to layer element
+    * `btn` (`String/Array`) no setting no diaplay. set one as `btn: 'button'`, if two, then set `btn: ['btn-one', 'btn-2'] `
+    * `shade` (`Boolean`) show the mask(defaults to `true`)
+    * `shadeClose` (`Boolean`) click the mask close the layer(defaults to `true`)
+    * `loadingTips` (`String`) the strings tips in loading(defaults to `null`)
+    * `yes` (`Function`) the first button's handled function
+    * `no` (`Function`) the seconds button's handled function
+    * `success` (`Function`) display the layer callback function
 
 Returns a id about this layer.
 
-layer.close(id) 关闭弹层
-* id, optional 调用layer.open返回的id值
+layer.close(id) closing the layer
+* id, optional the function `layer.open` returns id
 
-layer.closeAll() 关闭所有弹层
+layer.closeAll() close all layers
 
 ## Reference
-参考 开源弹层layerui系列 [layer](http://layer.layui.com/mobile/api.html)
+Refer [layer](http://layer.layui.com/mobile/api.html)
 
 ## License
 MIT
